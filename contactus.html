@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="contactus.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+  </head>
+
+  <header>
+    <nav class="navbar">
+      <img src="images/logo.png" alt="website_logo" />
+      <ul>  
+        <div class="pages">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contactus.html">Contact</a></li>
+        </div>
+
+          <div class="login">
+            <li>
+              <a href="login.html"><img src="images/profile.png" alt="profile_icon"/></a>
+            </li>
+          </div>
+
+          <div class="cart">
+            <li><img src="images/cart.png" alt="cart_icon" /></li>
+          </div>
+
+          <div class="search">
+            <li><img src="images/search.png" alt="search_icon" /></li>
+          </div>
+        </div>
+      </ul>
+    </nav>
+</header>
+
+  <body>
+
+    <div class="upper">
+      <h1>Contact Us</h1>
+      <h5>Any further inquiries? Feel free to send them to us!</h5>
+
+      <p><img src="images/phone.png" alt="" />012-3172916</p>
+      <p><img src="images/mail.png" alt="" />kmerch@gmail.com</p>
+
+      <div class="media">
+        <img src="images/facebook.png" alt="facebook_icon" />
+        <img src="images/instagram.png" alt="instagram_icon" />
+        <img src="images/twitter.png" alt="twitter_icon" />
+      </div>
+    </div>
+
+    <div class="lower">
+      <div class="form">
+      
+        <div class="name">
+          <h4>First Name</h4>
+          <input type="name" class="box" id='first'>
+          <h4>Last Name</h4>
+          <input type="name" class="box" id='last'>
+        </div>
+
+        <div class="mail">
+          <h4>Email Address</h4>
+          <input type="email" id='email' class="box">
+        </div>
+
+        <div class="number">
+          <h4>Phone Number</h4>
+          <input type="number" id='number' class="box">
+        </div>
+
+        <div class="question">
+          <h4>Question</h4>   
+          <input type="text" id='question' class="box">
+        </div>
+
+        <div class="button">
+          <button id="send" onclick = "message()">Send Message</button>
+        </div>
+
+        <div class="message">
+          <div class="success" id="success">Your Message Is Sent Succesfully!</div>
+          <div class="warning" id="warning">Fields Cannot be Empty!</div>
+        </div>
+
+      </div>
+    </div>
+    
+    <script>
+      function message() {
+        var first = document.getElementById('first');
+        var last = document.getElementById('last');
+        var email = document.getElementById('email');
+        var number = document.getElementById('number');
+        var question = document.getElementById('question');
+        const success = document.getElementById('success');
+        const warning = document.getElementById('warning');
+
+        if(first.value === '' || last.value === '' || email.value === '' || number.value === '' || question.value === '' ) {
+          warning.style.display = 'block';
+        }
+
+        else {
+          setTimeout(() => {
+            first.value = '';
+            last.value = '';
+            email.value = '';
+            number.value = '';
+            question.value = ''; }, 2000);
+        
+            success.style.display = 'block';
+        }
+
+        setTimeout(() => {
+          warning.style.display = 'none';
+          success.style.display = 'none';
+        }, 4000);
+      }
+    </script>
+  </body>
+
+  <footer>
+    <img src="images/logo.png" alt="website_logo">
+    <span>Shipping Policy</span>
+    <span>Refund Policy</span>
+    <span>Privacy Policy</span>
+    <span>Terms and Condition</span>
+    <hr>
+    <p>K Merch &copy 2023 - All Rights Reserved</p>
+  </footer>
+
+</html>

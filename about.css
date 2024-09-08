@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: lightgray;    
+    position: relative;
+    height: 70px;
+}
+
+.navbar ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    text-align: right;
+    margin-right: 100px;
+}
+
+.navbar .pages a{
+    margin-left: 100px;
+    font-size: 32px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: right;
+    
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar li {
+    float: left;
+    margin-left: 60px;
+}
+
+
+.navbar img {
+    margin-left: 18px;
+    width: 160px;
+    border-radius: 50px;
+    float: left;
+    margin-top: 10px;
+}   
+
+.navbar ul img:hover {
+    background-color: gray;
+}
+
+.login img {
+    width: 45px;
+    margin-top:  12px;
+    margin-left: 70px;
+}
+
+.cart img {
+    width: 45px;
+    margin-left: 10px;
+    margin-top: 11px;
+}
+
+.search img {
+    width: 45px;
+    margin-left: 10px;
+    margin-top: 11px;
+}
+
+.upper {
+    background-color: white;
+    height: 480px;
+    margin-bottom: -55px;
+}
+
+.lower {
+    background-color: #1d705c;
+    height: 500px;
+}
+
+.logo img {
+    width:250px;
+    border-radius: 50px;
+    position: relative;
+    left: 835px;
+    top:20px;
+    
+}
+
+p {
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+    font-size: 43px;
+    position: relative;
+    bottom:90px;
+}
+
+.tick img {
+    position: relative;
+    width: 120px;
+    left: 1750px;
+    top: 210px;
+}
+
+h1 {
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 50px;
+
+}
+
+.identity ul {
+    margin-left: 600px;
+    font-size: 44px;
+    color:#ffffff;
+    padding-top: 40px;
+}
+
+.star1 img{
+    width: 150px;
+    position:absolute;
+    left:1530px;
+    bottom:-70px;
+}
+
+.star2 img {
+    width: 150px;
+    position: absolute;
+    left: 350px;
+    bottom: 250px;
+}
+
+footer {
+    background-color: lightgray;
+    height: 145px;
+    margin-top: 240px;
+    display: flex;
+    gap: 100px;
+}
+
+footer span {
+    font-size: 30px;
+    color: black;
+    position: relative;
+    padding-top: 50px;
+    left:400px; 
+    margin-left: 50px;
+}
+
+footer span:hover {
+    text-decoration: underline;
+}
+
+footer img {
+    border-radius: 80px;
+    position: absolute;
+    width:270px;
+    left:20px;
+    top:1252px;
+}   
+
+footer hr {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid black;
+    margin: 29px auto;
+    position:absolute;
+    top: 1320px;
+}
+
+footer p {
+    font-size: 25px;
+    position: absolute;
+    top:1350px;
+    left: 615px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="login.css" />
+    <script src="login.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Itim"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <form
+        method="get"
+        action="home.html"
+        onsubmit="return validateform()"
+        class="form"
+      >
+        <h2>Log In</h2>
+        <input
+          type="email"
+          name="email"
+          class="box"
+          placeholder="Enter Email"
+          required
+        />
+        <input
+          type="password"
+          name="password"
+          class="box"
+          placeholder="Enter Password"
+          required
+        />
+        <input type="submit" value="Log In" id="submit" />
+        <a href="signup.html">New Customer? Sign Up here</a>
+      </form>
+
+      <div class="side">
+        <img src="images/logo.png" alt="website_logo" />
+      </div>
+
+      <div class="bar1">
+        <img src="images/bar_h.png" alt="" />
+      </div>
+
+      <div class="bar2">
+        <img src="images/bar_h.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>

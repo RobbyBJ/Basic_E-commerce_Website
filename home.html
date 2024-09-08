@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="home.css" />
+    <title>Home Page</title>
+  </head>
+
+  <header>
+      <nav class="navbar">
+        <img src="images/logo.png" alt="website_logo" />
+        <ul>  
+          <div class="pages">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+          </div>
+
+            <div class="login">
+              <li>
+                <a href="login.html"><img src="images/profile.png" alt="profile_icon"/></a>
+              </li>
+            </div>
+
+            <div class="cart">
+              <li><img src="images/cart.png" alt="cart_icon" /></li>
+            </div>
+
+            <div class="search">
+              <li><img src="images/search.png" alt="search_icon" /></li>
+            </div>
+          </div>
+        </ul>
+      </nav>
+  </header>
+
+
+  <body>
+
+    <div class="date">
+      <div class="start">Website Start Date: 1st Nov 2023</div>
+      <div id="placeholder"></div>
+      <button onclick="lastedit()">Last Updated</button>
+    </div>
+
+    <script>
+      function lastedit () {
+        var latestDate = new Date(document.lastModified);
+        document.getElementById("placeholder").innerHTML = latestDate;
+      }
+    </script>
+
+    <div class="top">
+    
+      <div class="bar1">
+        <img src="images/bar_h.png" alt="">
+      </div>
+
+      <div class="bar2">
+        <img src="images/bar_h.png" alt="">
+      </div>
+
+      <div class="bar3">
+        <img src="images/bar_v.png" alt="">
+      </div>
+
+      <div class="bar4">
+        <img src="images/bar_v.png" alt="">
+      </div>
+
+      <h1><img src="images/logo.png" alt="" /></h1>
+      <h1 type="first">Affordable</h1>
+      <h1><span>Merchandise</span> From</h1>
+      <h1>Your <span>Favourite Groups</span></h1>
+    </div>
+
+    <div class="groups">
+      <h1>A Variety Of Kpop Groups</h1>
+
+      <div class="title1">
+        <span>Blackpink</span>
+        <span>BTS</span>
+        <span>Twice</span> 
+      </div>
+
+      <div class="group1">
+        <img src="images/bp.jpg" alt="">
+        <img src="images/bts.jpg" alt="">
+        <img src="images/twice.jpg" alt="">
+      </div>
+
+      <div class="title2">
+        <span>NewJeans</span>
+        <span>Lesserafim</span>
+        <span>Aespa</span>
+      </div>
+
+      <div class="group2">
+        <img src="images/newjeans.jpg" alt="">
+        <img src="images/lessi.jpg" alt="">
+        <img src="images/aespa.jpg" alt="">
+      </div>
+
+      <div class="title3">
+        <span>StrayKids</span>
+        <span>Tomorrow X Together</span>
+        <span>Enhypen</span>
+      </div>
+
+      <div class="group3">
+        <img src="images/skz.jpg" alt="">
+        <img src="images/txt.jpg" alt="">
+        <img src="images/enha.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="items">
+      <h1>Products</h1>
+
+      <div class="types">
+        <span>LightSticks</span>
+        <span>Albums</span>
+        <span>T-Shirts</span>
+      </div>
+
+      <div class="products">
+        <img src="images/lightstick.jpg" alt="">
+        <img src="images/album.jpg" alt="">
+        <img src="images/shirt.jpg" alt="">
+      </div>  
+    </div>
+  </body>
+
+
+  <footer>
+    <img src="images/logo.png" alt="website_logo">
+    <span>Shipping Policy</span>
+    <span>Refund Policy</span>
+    <span>Privacy Policy</span>
+    <span>Terms and Condition</span>
+    <hr>
+    <p>K Merch &copy 2023 - All Rights Reserved</p>
+  </footer>
+
+</html>
